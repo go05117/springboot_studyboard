@@ -13,22 +13,24 @@
         margin-top : 40px
     }
     
-    .layout > input {
+    .layout input {
         width : 100%;;
         box-sizing : border-box;
     }
 
-    .layout > textarea {
+    .layout textarea {
         width : 100%;;
         margin-top : 10px;
         min-height: 300px;
     }
 </style>
 <body>
-    <div class = "layout">
-        <input type = "text">
-        <textarea></textarea>
-        <button>작성</button>
-    </div>
+    <form action = "/board/writepro" method = "post">
+        <div class = "layout">
+            <input type = "text" name = "title">
+            <textarea name = "content"></textarea>
+            <button type = "submit">작성</button>
+        </div>
+    </form>
 </body>
 </html>
