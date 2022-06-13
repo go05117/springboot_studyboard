@@ -9,7 +9,6 @@ import com.example.demo.entity.Board;
 import com.example.demo.service.BoardService;
 
 
-
 @Controller
 public class BoardController {
 	
