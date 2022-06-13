@@ -33,7 +33,6 @@ public class BoardController {
 	
 	@GetMapping("/board/list")
 	public String boardList(Model model) {
-		System.out.println("테스트1");
 		model.addAttribute("list", boardService.boardList());
 		return "boardlist";
 	}
