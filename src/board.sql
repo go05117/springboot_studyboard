@@ -8,6 +8,8 @@ CREATE TABLE IF NOT EXISTS board (
     id int NOT NULL AUTO_INCREMENT,
     title varchar(45) NOT NULL,
     content text NOT NULL,
+    filename varchar(150),
+    filepath varchar(300),
     PRIMARY KEY (id)
 );
 
